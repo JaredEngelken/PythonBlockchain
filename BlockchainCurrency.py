@@ -85,17 +85,17 @@ class Blockchain():
             
         return True
 
-jaredCoin = Blockchain()
+batCoin = Blockchain()
 
-jaredCoin.createTransaction(Transaction('address1','address2',100))
-jaredCoin.createTransaction(Transaction('address2','address1',50))
-
-print('Starting the miner...')
-jaredCoin.minePendingTransaction('jareds-address')
-
-print('\nBalance of jared is', jaredCoin.getBalanceOfAddress('jareds-address'))
+batCoin.createTransaction(Transaction('address1','address2',100))
+batCoin.createTransaction(Transaction('address2','address1',50))
 
 print('Starting the miner...')
-jaredCoin.minePendingTransaction('jareds-address')
+batCoin.minePendingTransaction('jareds-address')
 
-print('\nBalance of jared is', jaredCoin.getBalanceOfAddress('jareds-address'))
+print('\nBalance of jared is', batCoin.getBalanceOfAddress('jareds-address'))
+
+print('Starting the miner...')
+batCoin.minePendingTransaction('jareds-address')
+
+print('\nBalance of jared is', batCoin.getBalanceOfAddress('jareds-address'))
