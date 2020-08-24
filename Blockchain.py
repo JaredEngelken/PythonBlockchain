@@ -58,17 +58,17 @@ class Blockchain():
             
         return True
 
-jaredCoin = Blockchain()
+batCoin = Blockchain()
 print('Mining block 1...')
-jaredCoin.addBlock(Block(1,'01/05/2017',4))
-print(jaredCoin)
+batCoin.addBlock(Block(1,'01/05/2017',4))
+print(batCoin)
 print('Mining block 2...')
-jaredCoin.addBlock(Block(2,'01/07/2017',10))
+batCoin.addBlock(Block(2,'01/07/2017',10))
 
-##print('Is blockchain valid? ',jaredCoin.isChainValid())
+##print('Is blockchain valid? ',batCoin.isChainValid())
 ##
-##jaredCoin.chain[1].data = 1000
+##batCoin.chain[1].data = 1000
 ##
-##print('Is blockchain valid? ',jaredCoin.isChainValid())
+##print('Is blockchain valid? ',batCoin.isChainValid())
 
-print(jaredCoin)
+print(batCoin)
